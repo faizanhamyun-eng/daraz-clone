@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daraz Clone</title>
+  <link rel="icon" href="daraz-wbg-logo.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="main_Nav_Container">
+          <!-- 🔝 Top Bar -->
+      <div class="daraz-topbar d-flex justify-content-end align-items-center ">
+        <a href="#">SAVE MORE ON APP</a>
+        <a href="#">SELL ON DARAZ</a>
+        <a href="#">HELP & SUPPORT</a>
+        <!-- ✅ Login Button with Modal Trigger -->
+        <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</a>
+        <a href="#">SIGN UP</a>
+        <a href="#">زبان تبدیل کریں</a>
+      </div>
+
+      <!-- 🔒 LOGIN MODAL -->
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content border-0 shadow-sm p-3">
+            
+            <!-- Header -->
+            <div class="modal-header border-0 pb-0 ">
+              <h5 class="modal-title w-100 text-center fw-normal fs-5" id="loginModalLabel">Welcome to Daraz! Please login.</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!-- Body -->
+            <div class="modal-body px-4 pt-3">
+              <form>
+                <!-- Email -->
+                <div class="mb-3">
+                  <input type="email" class="form-control input-custom" placeholder="Please enter your Email">
+                </div>
+                <!-- Password -->
+                <div class="mb-2">
+                  <input type="password" class="form-control input-custom" placeholder="Please enter your Password">
+                </div>
+
+                <!-- Forgot Password -->
+                <div class="text-end mb-3">
+                  <a href="#" class="small text-muted text-decoration-none">Forgot Password?</a>
+                </div>
+
+                <!-- Login Button -->
+                <div class="d-grid mb-3">
+                  <button type="button" class="btn btn-login">LOGIN</button>
+                </div>
+              </form>
+
+              <!-- Sign Up -->
+              <div class="text-center my-3">
+                <p class="small text-muted mb-1">Don’t have an account? 
+                  <a href="#" class="text-decoration-none text-primary fw-semibold">Sign Up</a>
+                </p>
+              </div>
+
+              <!-- Divider -->
+              <div class="d-flex align-items-center my-3">
+                <hr class="flex-grow-1">
+                <span class="px-2 small text-muted">OR</span>
+                <hr class="flex-grow-1">
+              </div>
+
+              <!-- Social Login Buttons -->
+              <div class="d-flex justify-content-center gap-3 mt-3">
+              <!-- Google -->
+              <button class="btn social-btn d-flex align-items-center px-3" type="button">
+                  <div class="icon-circle me-2">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" width="20" height="20">
+                  </div>
+                  Google
+              </button>
+
+              <!-- Facebook -->
+              <button class="btn social-btn d-flex align-items-center px-3" type="button">
+                  <div class="icon-circle me-2">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" width="20" height="20">
+                  </div>
+                  Facebook
+              </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🔻 Main Navbar -->
+      <nav class="daraz-navbar d-flex">
+        <a href="#">
+          <img src="daraz-logo.png" alt="Daraz" class="daraz-logo">
+        </a>
+        <form class="d-flex search-box">
+          <input class="form-control" type="search" placeholder="Search in Daraz">
+          <button type="submit"><i class="bi bi-search"></i></button>
+        </form>
+        <a href="#" class="cart-icon"><i class="bi bi-cart"></i></a>
+      </nav>
+  </div>
+
+
+ <!-- carasol-&-app_download -->
+<div class="main_container d-flex">
+            <!-- 🔻 Carousel -->
+        <div class="carousel-wrapper d-flex my-0">
+        <div id="darazCarousel" class="carousel slide" data-bs-ride="carousel"
+            data-bs-interval="2000"   
+            data-bs-wrap="true"  
+            data-bs-pause="hover"       
+            style="width:988px; height:344px;">
+
+            <!-- Indicators (round) -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#darazCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#darazCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#darazCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#darazCarousel" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#darazCarousel" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#darazCarousel" data-bs-slide-to="5"></button>
+                <button type="button" data-bs-target="#darazCarousel" data-bs-slide-to="6"></button>
+                <button type="button" data-bs-target="#darazCarousel" data-bs-slide-to="7"></button>
+                <button type="button" data-bs-target="#darazCarousel" data-bs-slide-to="8"></button>
+                <button type="button" data-bs-target="#darazCarousel" data-bs-slide-to="9"></button>
+                <button type="button" data-bs-target="#darazCarousel" data-bs-slide-to="10"></button>
+                <button type="button" data-bs-target="#darazCarousel" data-bs-slide-to="11"></button>
+                <button type="button" data-bs-target="#darazCarousel" data-bs-slide-to="12"></button>
+                <button type="button" data-bs-target="#darazCarousel" data-bs-slide-to="13"></button>
+                <button type="button" data-bs-target="#darazCarousel" data-bs-slide-to="14"></button>
+            </div>
+
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="c2.webp.webp" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item"><img src="c1.webp" class="d-block w-100" alt="Slide 2"></div>
+            <div class="carousel-item"><img src="c3.webp" class="d-block w-100" alt="Slide 3"></div>
+            <div class="carousel-item"><img src="c4.webp" class="d-block w-100" alt="Slide 4"></div>
+            <div class="carousel-item"><img src="c5.webp" class="d-block w-100" alt="Slide 5"></div>
+            <div class="carousel-item"><img src="c6.webp" class="d-block w-100" alt="Slide 6"></div>
+            <div class="carousel-item"><img src="c7.webp" class="d-block w-100" alt="Slide 7"></div>
+            <div class="carousel-item"><img src="c8.webp" class="d-block w-100" alt="Slide 8"></div>
+            <div class="carousel-item"><img src="c9.webp" class="d-block w-100" alt="Slide 9"></div>
+            <div class="carousel-item"><img src="c10.webp" class="d-block w-100" alt="Slide 10"></div>
+            <div class="carousel-item"><img src="c11.webp" class="d-block w-100" alt="Slide 11"></div>
+            <div class="carousel-item"><img src="c12.webp" class="d-block w-100" alt="Slide 12"></div>
+            <div class="carousel-item"><img src="c13.webp" class="d-block w-100" alt="Slide 13"></div>
+            <div class="carousel-item"><img src="c14.webp" class="d-block w-100" alt="Slide 14"></div>
+            <div class="carousel-item"><img src="c15.webp" class="d-block w-100" alt="Slide 15"></div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev custom-prev" type="button" data-bs-target="#darazCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next custom-next" type="button" data-bs-target="#darazCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+        </div>
+
+        
+
+       <!-- 🔻 Ad Section -->
+        <div class="ad-section ms-2">
+
+           <div class="app-ad text-center p-2">
+                <!-- Logo + Heading -->
+               <div class="app-header d-flex align-items-center justify-content-center mb-2">
+                    <img src="app-logo.webp" alt="Daraz Logo" class="app-logo me-2">
+                    <h6 class="fw-semibold mb-0">TRY DARAZ APP</h6>
+               </div>
+
+
+                <!-- Card Content Wrapper -->
+                <div class="ad-card-wrapper">
+                    <!-- Rating Section -->
+                    <div class="rating-section">
+                        <span class="badge d-flex align-items-center gap-1">
+                            <img src="star.webp" alt="Star" class="star-icon">
+                           <span><span class="rating-number">4.8 Rated</span></span>
+                        </span>
+                    </div>
+
+                    <!-- Download Section -->
+                   <div class="download-section">
+                          <p class="fw-semibold mb-2">Download the App now</p>
+                          <ul class="list-unstyled mb-0 d-flex flex-column align-items-start">
+                              <li class="mb-1 d-flex align-items-start">
+                                  <img src="ship.webp" alt="Free Shipping" class="icon me-2">
+                                 <div class="item-text">Free  Shipping</div>
+                              </li>
+                              <li class="d-flex align-items-start">
+                                  <img src="voutcher.webp" alt="Exclusive Vouchers" class="icon me-2">
+                                 <div class="item-text">Exclusive Vouchers</div>
+                              </li>
+                          </ul>
+                   </div>
+
+
+
+                </div>
+
+
+
+             <div class="d-flex align-items-center gap-1">
+                    <!-- QR Code -->
+                    <img src="qr-code.webp" alt="QR Code" class="qr-code">
+
+                    <!-- Store Buttons -->
+                    <div class="d-flex flex-column gap-2 justify-content-center">
+                          <a href="#">
+                              <img src="applest.png" alt="Apple" class="sticker">
+                          </a>
+                          <a href="#">
+                              <img src="gplay.png" alt="Google Play" class="sticker">
+                          </a>
+                    </div>  
+            </div>
+
+          </div>
+             <!-- footer section -->
+
+         <div class="d-footer" style="padding: 0px 20px 15px 10px; font-size: 10px; margin-top: 5px; font-weight: bold;">
+              Download the App Now!
+         </div>
+
+
+        </div>
+
+
+</div>
+
+
+<h4  class="sale-heading">Flash Sale</h4>
+
+
+<!-- Flash Sale Section -->
+<div class="container product-section">
+  <!-- Header -->
+  <div class="product-header d-flex justify-content-between align-items-center">
+    <p class="mb-0">On Sale Now</p>
+    <a href="#" class="btn btn-outline-warning btn-sm">SHOP ALL PRODUCTS</a>
+  </div>
+
+  <!-- Products -->
+  <div class="row mt-2 g-0"> <!-- 👈 yahan g-0 lagaya -->
+    
+    <!-- Product 1 -->
+    <div class="col-2">
+      <div class="product-card">
+        <img src="6bags.webp" class="img-fluid" alt="Product 1">
+        <p class="product-title">Genuine Oral B Electric Toothbrush DB5...</p>
+        <p class="product-price">Rs.4,795</p>
+        <p class="product-oldprice">Rs.6,245 <span class="discount">-23%</span></p>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-2">
+      <div class="product-card">
+        <img src="wax.webp" class="img-fluid" alt="Product 2">
+        <p class="product-title">Stylish Casual Men Wrist Watch</p>
+        <p class="product-price">Rs.395</p>
+        <p class="product-oldprice">Rs.999 <span class="discount">-60%</span></p>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col-2">
+      <div class="product-card">
+        <img src="cont.webp" class="img-fluid" alt="Product 3">
+        <p class="product-title">Stylish Casual Men Wrist Watch</p>
+        <p class="product-price">Rs.395</p>
+        <p class="product-oldprice">Rs.999 <span class="discount">-60%</span></p>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="col-2">
+      <div class="product-card">
+        <img src="ken.webp" class="img-fluid" alt="Product 4">
+        <p class="product-title">Pack of 3 Polo T-Shirts For Men</p>
+        <p class="product-price">Rs.1,399</p>
+        <p class="product-oldprice">Rs.2,999 <span class="discount">-53%</span></p>
+      </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="col-2">
+      <div class="product-card">
+        <img src="airbudspro.webp" class="img-fluid" alt="Product 5">
+        <p class="product-title">Wireless Bluetooth Earbuds</p>
+        <p class="product-price">Rs.1,799</p>
+        <p class="product-oldprice">Rs.3,000 <span class="discount">-40%</span></p>
+      </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="col-2">
+      <div class="product-card">
+        <img src="pullups bar.webp" class="img-fluid" alt="Product 6">
+        <p class="product-title">Portable Mini USB Fan</p>
+        <p class="product-price">Rs.450</p>
+        <p class="product-oldprice">Rs.899 <span class="discount">-50%</span></p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Categories Section -->
+<div class="container categories-section">
+  <h3 >Categories</h3>
+
+  <!-- Row 1 -->
+  <div class="row g-0 text-center">
+    <div class="col">
+      <div class="category-box">
+        <img src="ct1.webp" alt="3D Printers">
+        <p>3D Printers</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="category-box">
+        <img src="ct2.webp" alt="Pasta">
+        <p>Pasta, Noodle & Pizza Tools</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="category-box">
+        <img src="ct3.webp" alt="SIM Tools">
+        <p>SIM Tools</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="category-box">
+        <img src="ca4.webp" alt="Protective gear">
+        <p>Protective gear</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="category-box">
+        <img src="ca5.webp" alt="Screen Protectors">
+        <p>Screen Protectors</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="category-box">
+        <img src="ca6.webp" alt="Casserole Pots">
+        <p>Casserole Pots</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="category-box">
+        <img src="ca7.webp" alt="Hoodies">
+        <p>Hoodies & Sweatshirts</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="category-box">
+        <img src="ca8.webp" alt="Toy Boxes">
+        <p>Toy Boxes & Organisers</p>
+      </div>
+    </div>
+  </div>
+  <div class="row g-0 text-center">
+    <div class="col">
+      <div class="category-box">
+        <img src="cat1.webp" alt="Dog Clippers">
+        <p>Dog & Cat Electric Clippers</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="category-box">
+        <img src="cat2.webp" alt="Pendants">
+        <p>Pendants</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="category-box">
+        <img src="cat3.webp" alt="Dining Sets">
+        <p>Dining Sets</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="category-box">
+        <img src="cat5.webp" alt="Microphones">
+        <p>Microphones</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="category-box">
+        <img src="ca13.webp" alt="Leashes">
+        <p>Leashes & Harnesses</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="category-box">
+        <img src="ca14.webp" alt="Scooters">
+        <p>Scooters</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="category-box">
+        <img src="cat6.webp" alt="Donate">
+        <p>Donate to Educate</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="category-box">
+        <img src="ca16.webp" alt="Heatsinks">
+        <p>Heatsinks</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- for you page -->
+
+<div class="container custom-products my-4">
+  <h3 >Just For You</h3>
+
+  <div class="row g-3">
+    <!-- Product Card -->
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card custom-card h-100">
+        <a class="ProductAncorTag" href="./ProductDetailPage/Product.html">
+
+          <img src="ppl.webp" class="card-img-top" alt="Tshirt">
+          <div class="card-body p-2">
+            <p class="custom-title">Pumpkin Seeds 240 Gram Without Shell Fresh Crunchy...</p>
+            <p class="custom-price">Rs. 1,200 <span class="custom-discount">-33%</span></p>
+            <p class="custom-rating">⭐⭐⭐⭐☆ <span>(90)</span></p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Product Card -->
+   <div class="col-6 col-md-4 col-lg-2">
+      <div class="card custom-card h-100">
+        <img src="pro.webp" class="card-img-top" alt="Tshirt">
+        <div class="card-body p-2">
+          <p class="custom-title">The Vintage Clothing pack of 3 basic premium...</p>
+          <p class="custom-price">Rs.1,377 <span class="custom-discount">-8%</span></p>
+          <p class="custom-rating">⭐⭐⭐⭐☆ <span>(90)</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Card -->
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card custom-card h-100">
+        <img src="pro.webp" class="card-img-top" alt="Tshirt">
+        <div class="card-body p-2">
+          <p class="custom-title">The Vintage Clothing pack of 3 basic premium...</p>
+          <p class="custom-price">Rs.1,377 <span class="custom-discount">-8%</span></p>
+          <p class="custom-rating">⭐⭐⭐⭐☆ <span>(90)</span></p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card custom-card h-100">
+        <img src="pro.webp" class="card-img-top" alt="Tshirt">
+        <div class="card-body p-2">
+          <p class="custom-title">The Vintage Clothing pack of 3 basic premium...</p>
+          <p class="custom-price">Rs.1,377 <span class="custom-discount">-8%</span></p>
+          <p class="custom-rating">⭐⭐⭐⭐☆ <span>(90)</span></p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card custom-card h-100">
+        <img src="pro.webp" class="card-img-top" alt="Tshirt">
+        <div class="card-body p-2">
+          <p class="custom-title">The Vintage Clothing pack of 3 basic premium...</p>
+          <p class="custom-price">Rs.1,377 <span class="custom-discount">-8%</span></p>
+          <p class="custom-rating">⭐⭐⭐⭐☆ <span>(90)</span></p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card custom-card h-100">
+        <img src="pro.webp" class="card-img-top" alt="Tshirt">
+        <div class="card-body p-2">
+          <p class="custom-title">The Vintage Clothing pack of 3 basic premium...</p>
+          <p class="custom-price">Rs.1,377 <span class="custom-discount">-8%</span></p>
+          <p class="custom-rating">⭐⭐⭐⭐☆ <span>(90)</span></p>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card custom-card h-100">
+        <img src="watch.webp" class="card-img-top" alt="watch pic">
+        <div class="card-body p-2">
+          <p class="custom-title">10 grid watch box leather watch display with...</p>
+          <p class="custom-price">Rs.1,990 <span class="custom-discount">-15%</span></p>
+          <p class="custom-rating">⭐⭐⭐⭐⭐ <span>(187)</span></p>
+        </div>
+      </div>
+    </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+      <div class="card custom-card h-100">
+        <img src="watch.webp" class="card-img-top" alt="watch pic">
+        <div class="card-body p-2">
+          <p class="custom-title">10 grid watch box leather watch display with...</p>
+          <p class="custom-price">Rs.1,990 <span class="custom-discount">-15%</span></p>
+          <p class="custom-rating">⭐⭐⭐⭐⭐ <span>(187)</span></p>
+        </div>
+      </div>
+    </div>
+
+
+      <div class="col-6 col-md-4 col-lg-2">
+      <div class="card custom-card h-100">
+        <img src="watch.webp" class="card-img-top" alt="watch pic">
+        <div class="card-body p-2">
+          <p class="custom-title">10 grid watch box leather watch display with...</p>
+          <p class="custom-price">Rs.1,990 <span class="custom-discount">-15%</span></p>
+          <p class="custom-rating">⭐⭐⭐⭐⭐ <span>(187)</span></p>
+        </div>
+      </div>
+    </div>
+
+
+      <div class="col-6 col-md-4 col-lg-2">
+      <div class="card custom-card h-100">
+        <img src="watch.webp" class="card-img-top" alt="watch pic">
+        <div class="card-body p-2">
+          <p class="custom-title">10 grid watch box leather watch display with...</p>
+          <p class="custom-price">Rs.1,990 <span class="custom-discount">-15%</span></p>
+          <p class="custom-rating">⭐⭐⭐⭐⭐ <span>(187)</span></p>
+        </div>
+      </div>
+    </div>
+
+
+      <div class="col-6 col-md-4 col-lg-2">
+      <div class="card custom-card h-100">
+        <img src="watch.webp" class="card-img-top" alt="watch pic">
+        <div class="card-body p-2">
+          <p class="custom-title">10 grid watch box leather watch display with...</p>
+          <p class="custom-price">Rs.1,990 <span class="custom-discount">-15%</span></p>
+          <p class="custom-rating">⭐⭐⭐⭐⭐ <span>(187)</span></p>
+        </div>
+      </div>
+    </div>
+
+
+     <div class="col-6 col-md-4 col-lg-2">
+      <div class="card custom-card h-100">
+        <img src="watch.webp" class="card-img-top" alt="watch pic">
+        <div class="card-body p-2">
+          <p class="custom-title">10 grid watch box leather watch display with...</p>
+          <p class="custom-price">Rs.1,990 <span class="custom-discount">-15%</span></p>
+          <p class="custom-rating">⭐⭐⭐⭐⭐ <span>(187)</span></p>
+        </div>
+      </div>
+    </div>
+
+     <div class="col-6 col-md-4 col-lg-2">
+      <div class="card custom-card h-100">
+        <img src="tracksuit.webp" class="card-img-top" alt="tracksuit">
+        <div class="card-body p-2">
+          <p class="custom-title">kids  cotton track suit ...</p>
+          <p class="custom-price">Rs.1,190 <span class="custom-discount">-40%</span></p>
+          <p class="custom-rating">⭐⭐⭐⭐⭐ <span>(712)</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card custom-card h-100">
+        <img src="tracksuit.webp" class="card-img-top" alt="tracksuit">
+        <div class="card-body p-2">
+          <p class="custom-title">kids  cotton track suit ...</p>
+          <p class="custom-price">Rs.1,190 <span class="custom-discount">-40%</span></p>
+          <p class="custom-rating">⭐⭐⭐⭐⭐ <span>(712)</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card custom-card h-100">
+        <img src="tracksuit.webp" class="card-img-top" alt="tracksuit">
+        <div class="card-body p-2">
+          <p class="custom-title">kids  cotton track suit ...</p>
+          <p class="custom-price">Rs.1,190 <span class="custom-discount">-40%</span></p>
+          <p class="custom-rating">⭐⭐⭐⭐⭐ <span>(712)</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card custom-card h-100">
+        <img src="tracksuit.webp" class="card-img-top" alt="tracksuit">
+        <div class="card-body p-2">
+          <p class="custom-title">kids  cotton track suit ...</p>
+          <p class="custom-price">Rs.1,190 <span class="custom-discount">-40%</span></p>
+          <p class="custom-rating">⭐⭐⭐⭐⭐ <span>(712)</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card custom-card h-100">
+        <img src="tracksuit.webp" class="card-img-top" alt="tracksuit">
+        <div class="card-body p-2">
+          <p class="custom-title">kids  cotton track suit ...</p>
+          <p class="custom-price">Rs.1,190 <span class="custom-discount">-40%</span></p>
+          <p class="custom-rating">⭐⭐⭐⭐⭐ <span>(712)</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="card custom-card h-100">
+        <img src="tracksuit.webp" class="card-img-top" alt="tracksuit">
+        <div class="card-body p-2">
+          <p class="custom-title">kids  cotton track suit ...</p>
+          <p class="custom-price">Rs.1,190 <span class="custom-discount">-40%</span></p>
+          <p class="custom-rating">⭐⭐⭐⭐⭐ <span>(712)</span></p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Hidden Cards Section -->
+        <div class="collapse" id="moreProducts">
+          <div class="row mt-3">
+            <!-- yahan pe extra cards dal do -->
+             <div class="col-6 col-md-4 col-lg-2">
+                <div class="card custom-card h-100">
+                  <img src="hd.webp" class="card-img-top" alt="lastic strap">
+                  <div class="card-body p-2">
+                    <p class="custom-title">latex elastic tube resistance band pull...</p>
+                    <p class="custom-price">Rs.599 <span class="custom-discount">-70%</span></p>
+                    <p class="custom-rating">⭐⭐⭐⭐⭐ <span>(152)</span></p>
+                  </div>
+                </div>
+              </div>
+
+
+
+            <!-- aur cards yahan -->
+          </div>
+        </div>
+
+      <div class="text-center mt-3">
+  <!-- Load More Button -->
+  <button class="btn load-more-btn" id="loadMoreBtn">Load More</button>
+
+  <!-- Loader -->
+  <div class="LoaderWrapper" id="loader" style="display:none;">
+    <div class="Loader">
+      <div class="border-spinner"></div>
+      <img src="./loader.png" class="loader-img" alt="">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+      
+
+
+
+    <!-- aur bhi products isi format me add karo -->
+  </div>
+</div>
+
+<!-- footer1 -->
+
+<footer >
+  <div class="footer1">
+    <div class="row">
+      
+      <!-- LEFT SIDE (50% width) -->
+      <div class="col-md-6 ">
+        <div class="row">
+          
+          <!-- Customer Care (Left Column) -->
+          <div class="col-md-6 ">
+            <h5>Customer Care</h5>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">How to Buy</a></li>
+              <li><a href="#">Corporate & Bulk Purchasing</a></li>
+              <li><a href="#">Returns & Refunds</a></li>
+              <li><a href="#">Daraz Shop</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Purchase Protection</a></li>
+              <li><a href="#">Daraz Pick up Points</a></li>
+            </ul>
+          </div>
+
+          <!-- Daraz Info (Right Column) -->
+          <div class="col-md-6">
+            <h5>Daraz</h5>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Digital Payments</a></li>
+              <li><a href="#">Daraz Donates</a></li>
+              <li><a href="#">Daraz Blog</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">NTN Number : 4012118-6</a></li>
+              <li><a href="#">STRN Number : 1700401211818</a></li>
+              <li><a href="#">Online Shopping App</a></li>
+              <li><a href="#">Online Grocery Shopping</a></li>
+              <li><a href="#">Daraz Exclusive</a></li>
+              <li><a href="#">Daraz University</a></li>
+              <li><a href="#">Sell on Daraz</a></li>
+              <li><a href="#">Join Daraz Affiliate Program</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+     <!-- RIGHT SIDE (50% width) -->
+          <div class="col-md-6 d-flex align-items-start justify-content-start">
+
+            <!-- Logo + Text -->
+            <div class="d-flex align-items-center me-4">
+              <img src="daraz-wbg-logo.png" alt="Daraz Logo" width="40" class="me-2">
+              <div>
+                <p class="mb-0" style="color:#f85606;">Happy Shopping</p>
+                <a href="#" style="text-decoration:none; font-size:14px;">Download App</a>
+              </div>
+            </div>
+
+            <!-- App Badges -->
+            <div class="app-badges d-flex flex-wrap">
+              <!-- First Row (2 badges) -->
+              <a href="#" class="me-2">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" height="40">
+              </a>
+              <a href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" height="40">
+              </a>
+
+              <!-- Second Row (1 badge centered) -->
+              <div class="w-100 d-flex justify-content-center mt-2">
+                <a href="#"><img src="appGallery.png" alt="App Gallery" height="40"></a>
+              </div>
+            </div>
+
+          </div>
+
+
+    </div>
+  </div>
+</footer>
+
+<!-- footer2 -->
+<footer class="payment-section-footer d-flex flex-row justify-content">
+
+  <!-- LEFT: Payment Methods -->
+  <div class="payment-method d-flex flex-column">
+    <h6>Payment Methods</h6>
+
+    <!-- Images Grid -->
+    <div class="row g-1 mt-2">
+      <div class="col-2"><img src="pm1.png" class="img-fluid" alt="Payment 1"></div>
+      <div class="col-2"><img src="pm2.png" class="img-fluid" alt="Payment 2"></div>
+      <div class="col-2"><img src="pm3.png" class="img-fluid" alt="Payment 3"></div>
+      <div class="col-2"><img src="pm4.png" class="img-fluid" alt="Payment 4"></div>
+      <div class="col-2"><img src="pm5.png" class="img-fluid" alt="Payment 5"></div>
+      <div class="col-2"><img src="pm6.png" class="img-fluid" alt="Payment 6"></div>
+    </div>
+
+    <div class="row g-1">
+      <div class="col-2"><img src="pm7.png" class="img-fluid" alt="Payment 7"></div>
+      <div class="col-2"><img src="pm8.png" class="img-fluid" alt="Payment 8"></div>
+      <div class="col-2"><img src="pm9.png" class="img-fluid" alt="Payment 9"></div>
+    </div>
+  </div>
+
+  <!-- RIGHT: Extra Section -->
+  <div class="verified-section d-flex flex-column align-items-start">
+    <h6>Verified by</h6>
+    <img src="vimg.png" alt="Partner Logo" class="img-fluid mt-2" style="max-width:120px;">
+  </div>
+
+</footer>
+
+<!-- ca-footer -->
+
+<footer class="ca-footer pt-5 pb-4">
+  <div class="container-fluid">
+    <div class="row">
+      
+      <!-- Column 1 -->
+      <div class="col-md-3 mb-4">
+        <p class="fw-bold">How Daraz Transformed Online Shopping in Pakistan</p>
+        <p>
+          Daraz first made waves in Pakistan’s e-commerce market after its introduction in 2012. We have since 
+          grown to become Pakistan’s largest platform for online shopping with a network spread across Asia in 
+          Pakistan, Bangladesh, Sri Lanka, Myanmar, and Daraz.com.np. Our vision was to provide a safe, efficient 
+          online marketplace platform for vendors and customers across the country to come together. 
+        </p>
+        <p>
+          Avail exclusive offers by downloading Daraz Wallet – a closed loop digital wallet that offers you a secure, 
+          easy way to make payments. We also have easypaisa & jazzcash payment method for our customers' ease
+        </p>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-md-3 mb-4">
+        <p class="fw-bold">Shop from Verified Vendors</p>
+        <p>
+          Daraz understands that online shopping in Pakistan comes with its fair share of risks. This is why with 
+          Daraz Marketplace and Daraz Mall customers have the security of choosing from verified vendors and brands 
+          from Karachi, Lahore, Islamabad and all across Pakistan. 
+        </p>
+        <p class="fw-bold mt-3">Shop Around the World with Daraz Global Collection</p>
+        <p>
+          International sellers and local convenience come together with Daraz Global collection. Get the chance to 
+          shop online from vendors around the world without leaving the Daraz website. 
+        </p>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-md-3 mb-4">
+        <p class="fw-bold">Top Categories & Brands</p>
+        <ul class="list-unstyled">
+          <li>MOBILE PHONES IN PAKISTAN<br>
+            Apple iPhones , Honor Mobiles , Huawei Mobiles , Tecno Mobiles , Redmi Mobiles , Xiaomi Mi Mobiles , 
+            Nokia Mobiles , OnePlus Mobiles , Oppo Mobile Phones , Realme Mobiles , Samsung Mobile Phones , 
+            Vivo Mobile Phones , Mobile Accessories , Smart Watches
+          </li>
+          <li class="mt-2">LATEST LAPTOPS<br>
+            Dell Laptops , HP Laptops , Lenovo Laptops , Mouse , Gaming Graphic Cards , lenovo ideapad 3 , 
+            Macbook Pro 13 , Hp Probook 650 G2
+          </li>
+          <li class="mt-2">LED TV<br>
+            Changhong Led Tv , LG Led Tv , Samsung Led Tv , Sony Led Tv , TCL LED TVs
+          </li>
+          <li class="mt-2">HOME APPLIANCES<br>
+            Microwave oven , Geyser , Heater , Refrigerators , Deep Freezers , Generators , Water Dispensers , 
+            Fans , Room Cooler , Table Fans , Wall Fans , Exhaust Fans , Pedestal Fans , Window Ac , Solar Panel , 
+            Washing Machine
+          </li>
+          <li class="mt-2">DSLR CAMERAS<br>
+            Camera Tripods , Drones
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="col-md-3 mb-4">
+        <p class="fw-bold">More</p>
+        <ul class="list-unstyled">
+          <li>WOMEN'S FASHION<br>
+            Al-Karam Studio , Warda , Salitex , Bonanza Satrangi , Edenrobe , Firdous , Junaid Jamshed , Limelight , 
+            Sana Safinaz , Mahru , Pushup Bra , Women Undergarments
+          </li>
+          <li class="mt-2">MEN'S FASHION<br>
+            Men's Shirts , Men's T-Shirts
+          </li>
+          <li class="mt-2">ONLINE GROCERY STORE<br>
+            Oil & Ghee , Basmati Rice , Dried Fruits , Chocolates , Mattresses
+          </li>
+          <li class="mt-2">ONLINE BOOK STORE<br>
+            English Books , Islamic Books , History Books , English Literature Books , Kids Urdu Stories , 
+            Pride & Prejudice , Harry Potter Story Books , Namal Novel , Nimra Ahmed Novels
+          </li>
+          <li class="mt-2">AIR CONDITIONERS<br>
+            Kenwood Ac , Haier Ac , Gree Ac , Dawlance Ac , Orient Ac , Ecostar Ac , Inverex Solar Ac , Pel Ac
+          </li>
+          <li class="mt-2">TOP MOBILE PHONES<br>
+            Nokia G20 , redmi 9 , realme 7 pro , realme c15 , realme c21 , itel vision 1 pro price in Pakistan
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- last footer -->
+
+<footer class="bt-footer">
+  <div class="container-fluid">
+    <div class="row d-flex">
+
+      <!-- Left Side -->
+      <div class="col-md-6 bt-footer-left">
+        <h5>Daraz International</h5>
+
+        <!-- 5 images with text row -->
+        <div class="d-flex align-items-center bt-img-row flex-wrap">
+          <div class="d-flex align-items-center me-2 mb-2">
+            <img src="f1.png" alt="img1" class="me-2">
+            <span class="bt-footer-text">Pakistan</span>
+          </div>
+          <div class="d-flex align-items-center me-2 mb-2">
+            <img src="f2.png" alt="img2" class="me-2">
+            <span class="bt-footer-text">Bangladesh</span>
+          </div>
+          <div class="d-flex align-items-center me-2 mb-2">
+            <img src="f3.png" alt="img3" class="me-2">
+            <span class="bt-footer-text">Sri Lanka</span>
+          </div>
+          <div class="d-flex align-items-center me-2 mb-2">
+            <img src="f4.png" alt="img4" class="me-2">
+            <span class="bt-footer-text">Myanmar</span>
+          </div>
+          <div class="d-flex align-items-center mb-2">
+            <img src="f5.png" alt="img5" class="me-2">
+            <span class="bt-footer-text">Nepal</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side -->
+      <div class="col-md-6 bt-footer-right">
+        <!-- Heading + paragraph in one row -->
+        <div class="d-flex justify-content-between align-items-center bt-follow-row">
+          <h5 class="mb-0">Follow Us</h5>
+          <p class="mb-0 bt-follow-text">© Daraz clone 2025</p>
+        </div>
+
+        <!-- Below normal right side content -->
+      <div class="d-flex align-items-center bt-img-row flex-wrap">
+          <div class="d-flex align-items-center me-2 mb-2">
+            <img src="l1.png" alt="img1" class="me-2">
+         </div>
+
+         <div class="d-flex align-items-center me-2 mb-2">
+            <img src="l2.png" alt="img1" class="me-2">
+         </div>
+
+         <div class="d-flex align-items-center me-2 mb-2">
+            <img src="l3.png" alt="img1" class="me-2">
+         </div>
+
+         <div class="d-flex align-items-center me-2 mb-2">
+            <img src="l4.png" alt="img1" class="me-2">
+         </div>
+
+         <div class="d-flex align-items-center me-2  mb-2">
+            <img src="l5.png" alt="img1" class="me-2">
+         </div>
+
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<script src="./index.js"></script>
+</html>
