@@ -9,13 +9,18 @@ html, body {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  overflow-x: hidden; /* ab sirf body ke liye hoga */
+  overflow-x: hidden; 
 }
 
 
 body {
   font-family: Arial, Helvetica, sans-serif; 
   background: #f2f2f2;
+}
+.main{
+  width: 100%;
+  height: fit-content;
+  border: 2px solid red;
 }
 .modal-header{
   overflow-y: hidden;
@@ -102,6 +107,9 @@ background-color: #f85606;
   width: 100%;
   height: fit-content;
   padding-top: 100px;
+  display: flex;
+  justify-content: center;
+   
 }
 /* Cart icon */
 .cart-icon {
@@ -205,9 +213,8 @@ background-color: #f85606;
 
 /* 🔻 Carousel wrapper */
 .carousel-wrapper {
-  justify-content: flex-start;
-  padding-left: 32px;          
-  margin: 0;
+  display: flex;
+  justify-content: start;
 }
 
 /* Carousel size */
@@ -440,11 +447,9 @@ background-color: #f85606;
 
 
 .product-section {
-  max-width: 1190px;   
+  width: 100%;
   background: #fff;
   height: auto;        
-  margin: 0 auto;     
-  box-sizing: border-box;
 }
 
 .product-header {
@@ -543,7 +548,9 @@ background-color: #f85606;
 
 
 /* catagories section  */
-
+.categories-section-box{
+  width: 100%;
+}
 .categories-section {
   max-width: 100%;
   padding-top: 20px;
