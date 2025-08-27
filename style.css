@@ -1,10 +1,17 @@
 *{
+   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: hidden; /* ab sirf body ke liye hoga */
 }
+
 
 body {
   font-family: Arial, Helvetica, sans-serif; 
@@ -909,22 +916,27 @@ footer ul li a:hover {
 
 /* ----------------------------------------------------- */
 
+
 .categories-main-wrapper {
-  width: 100%;
-  background-color: #fff;
+  display: block;
+  position: relative;  
+  z-index: 1;          
+  background: white;
+  margin-top: 104px;    
+
 }
+
+
 
 .categories-wrapper {
   position: relative;
-  display: inline-block; 
-  margin-top: 100px;
-  overflow: hidden;  
+  display: inline-block;
 }
 
 .category-btn {
   padding: 12px 20px;
-  border: 1px solid white;
-  background: transparent;
+  border: none;
+  background: #ffffff;
   font-weight: 600;
   color: #00055a;
   cursor: pointer;
@@ -935,14 +947,15 @@ footer ul li a:hover {
 }
 
 .categories-menu {
-  display: none;
+   display: none;
   position: absolute;
-  top: 100%; 
-  left: 0;              
-  width: 220px;         
-  background: #fff; 
+  top: 100%;    
+  left: 0;        
+  width: 100%;    
+  background: white;
   border: 1px solid #ddd;
-  z-index: 1000;
+  z-index: 1000;  
+  margin-left: 35px;
 }
 
 .categories-menu ul {
@@ -954,7 +967,7 @@ footer ul li a:hover {
 .categories-menu li {
   padding: 8px 12px;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 14px;
   color: #444;
 }
 
@@ -963,8 +976,9 @@ footer ul li a:hover {
 }
 
 .categories-wrapper:hover .categories-menu {
- display: block !important;
+   display: block;
 }
+
 
   
 
