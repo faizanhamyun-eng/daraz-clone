@@ -909,65 +909,63 @@ footer ul li a:hover {
 
 /* ----------------------------------------------------- */
 
-
-
-.categories-main-wrapper{
+.categories-main-wrapper {
   width: 100%;
-  height: fit-content;
   background-color: white;
 }
+
 .categories-wrapper {
   position: relative;
   display: inline-block; 
-  margin-top: 100px; 
-  overflow-y: hidden;         
-  }
+  margin-top: 100px;
+  overflow: hidden;  
+}
 
-    .category-btn {
-      padding: 12px 20px;
-      border:1px solid white;
-      background: transparent;
-      font-weight: 600;
-      color: #00055a;
-      cursor: pointer;
-      width: 220px;  
-      text-align: left;
-      padding-left: 65px;
-      font-size: 14px;
-    }
+.category-btn {
+  padding: 12px 20px;
+  border: 1px solid white;
+  background: transparent;
+  font-weight: 600;
+  color: #00055a;
+  cursor: pointer;
+  width: 220px;  
+  text-align: left;
+  padding-left: 65px;
+  font-size: 14px;
+}
 
-    .categories-menu {
-      display: none;
-      position: absolute;
-      top: 100%; 
-      left: 35px;
-      width: 100% ; 
-      background: white !important; 
-      border: 1px solid #ddd;
-      z-index: 1000;
-    }
+.categories-menu {
+  display: none;
+  position: absolute;
+  top: 100%; 
+  left: 0;              
+  width: 220px;         
+  background: #fff; 
+  border: 1px solid #ddd;
+  z-index: 1000;
+}
 
-    .categories-menu ul {
-      list-style: none;
-      margin: 0;
-      padding: 0px 0;
-    }
+.categories-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-    .categories-menu li {
-      padding: 3px 5px;
-      cursor: pointer;
-      font-size: 13px;
-      color: #444;
-    }
+.categories-menu li {
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #444;
+}
 
-    .categories-menu li:hover {
-      background: #f1f1f1;
-    }
+.categories-menu li:hover {
+  background: #f1f1f1;
+}
 
-    
-    .categories-wrapper:hover .categories-menu {
-      display: block;
-    }    
+.categories-wrapper:hover .categories-menu {
+ display: block !important;
+}
+
   
 
 
