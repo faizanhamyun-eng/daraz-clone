@@ -700,7 +700,7 @@ background-color: #f85606;
   align-items: center;
   justify-content: center;
   position: relative;
-  overflow-y: hidden;
+  overflow: hidden;
 
 }
 
