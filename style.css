@@ -21,7 +21,6 @@ body {
 .main{
   width: 100%;
   height: fit-content;
-  border: 2px solid red;
 }
 .modal-header{
   overflow-y: hidden;
@@ -39,13 +38,15 @@ body {
 .daraz-topbar {
   background-color: #f85606;
   padding: 3px 45px;
+  padding-left: 15px;
 }
 .daraz-topbar a {
   color: #fff;
-  font-size: 12px;
+  font-size: 11px;
   margin-left: 30px;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 450;
+  padding: 0px 3px;
 }
 .daraz-topbar a:hover {
   text-decoration: none;
@@ -55,8 +56,8 @@ body {
 /* 🔻 Main Navbar */
 .daraz-navbar {
 background-color: #f85606;
-  padding: 10px 25px;
-  min-height: 80px;
+  padding: 8px ;
+  min-height: 73px;
   width: 100%;
   z-index: 1000;
 }
@@ -67,6 +68,7 @@ background-color: #f85606;
   padding-left: 20px;
   margin-top: 10px;
   display: block;
+  padding-right: 20px;
 }
 
 /* Search bar */
@@ -75,8 +77,11 @@ background-color: #f85606;
   max-width: 768px;
   margin: 0 20px;
   padding-left: 40px;
+  padding-right: 30px;
   display: flex;
   margin-top: 6px;
+  margin-right:0px;
+
 }
 
 .search-box input {
@@ -113,7 +118,6 @@ background-color: #f85606;
 .cart-icon {
   color: #fff;
   font-size: 24px;
-  margin-left: 10px;
   margin-top: 16px;
   display: flex;
 }
@@ -437,7 +441,19 @@ background-color: #f85606;
 }
 
 
-
+.S-A-button{
+  border: 1px solid #F57224 ;
+  border-radius: 2px;
+  color:#F57224 ;
+  padding: 8px 14px; 
+  font-size: 13px; 
+  font-weight: 550;
+} 
+.S-A-button.btn:hover {
+  border: 1px solid #F57224 ;
+  border-radius: 2px;
+  color:#F57224 ;
+}
 
 
 
@@ -1143,24 +1159,51 @@ footer ul li a:hover {
 
 /* Quantity Section */
 .quantity-box {
-  overflow: hidden;
-}
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
 
-.quantity-details{
-  padding-top: 15px;
-}
+  .quantity-details {
+    padding-top: 15px;
+  }
 
+  .quantity-box .btn-light {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+  }
 
-.quantity-box .btn-light {
-  background: #f5f5f5;
-  border-radius: 0;
-  font-weight: bold;
-}
+  .quantity-box .btn-light:hover {
+    background: #e9ecef;
+  }
 
-.quantity-box .btn-light:hover {
-  background: #eaeaea;
-}
+  .quantity-box .quantity-input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-left: none;
+    border-right: none;
+    height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 0;
+    -moz-appearance: textfield;
+  }
 
+  .quantity-box .quantity-input::-webkit-inner-spin-button,
+  .quantity-box .quantity-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 
 /* Buttons */
 .buy-button{
@@ -1512,7 +1555,6 @@ footer ul li a:hover {
 
 .product-card {
   background: #fff;
-  border: 1px solid #e5e5e5;
   box-shadow: 0 1px 3px rgba(0,0,0,0.08);
   transition: all 0.2s ease;
   height: 100%;
