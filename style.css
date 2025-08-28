@@ -1196,7 +1196,6 @@ footer ul li a:hover {
     font-weight: 600;
     font-size: 16px;
     border-radius: 0;
-    -moz-appearance: textfield;
   }
 
   .quantity-box .quantity-input::-webkit-inner-spin-button,
