@@ -1,4 +1,4 @@
-console.log("JS loaded ✅");
+console.log("JS loaded");
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -9,14 +9,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     minusBtn.addEventListener("click", () => {
       let value = parseInt(input.value) || 1;
-      if (value > 1) {
+      if (value > 1) {   
         input.value = value - 1;
       }
     });
 
     plusBtn.addEventListener("click", () => {
       let value = parseInt(input.value) || 1;
-      input.value = value + 1;
+      if (value < 3) {   
+        input.value = value + 1;
+      }
     });
   });
 });

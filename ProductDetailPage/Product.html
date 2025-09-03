@@ -3,98 +3,166 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="daraz-wbg-logo.png" type="image/png">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="/imeges/daraz-wbg-logo.png" type="/image/png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <title>Pumpkin Seeds Without Shell</title>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body style="background-color: #EFF0F5;">
   <div class="wrapper">
 
-    <div class="main_Nav_Container">
-        <!--  Top Bar -->
-        <div class="daraz-topbar d-flex justify-content-end align-items-center ">
-        <a href="#">SAVE MORE ON APP</a>
-        <a href="#">SELL ON DARAZ</a>
-        <a href="#">HELP & SUPPORT</a>
-        <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</a>
-        <a href="#">SIGN UP</a>
-        <a href="#">زبان تبدیل کریں</a>
-        </div>
-
-        <!--  LOGIN MODAL -->
-        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content border-0 shadow-sm p-3">
-            <div class="modal-header border-0 pb-0">
-                <h5 class="modal-title w-100 text-center fw-normal fs-5" id="loginModalLabel">Welcome to Daraz! Please login.</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-
-            <div class="modal-body px-4 pt-3">
-                <form>
-                <div class="mb-3">
-                    <input type="email" class="form-control input-custom" placeholder="Please enter your Email">
-                </div>
-                <div class="mb-2">
-                    <input type="password" class="form-control input-custom" placeholder="Please enter your Password">
-                </div>
-                <div class="text-end mb-3">
-                    <a href="#" class="small text-muted text-decoration-none">Forgot Password?</a>
-                </div>
-                <div class="d-grid mb-3">
-                    <button type="button" class="btn btn-login">LOGIN</button>
-                </div>
-                </form>
-
-                <div class="text-center my-3">
-                <p class="small text-muted mb-1">Don’t have an account? 
-                    <a href="#" class="text-decoration-none text-primary fw-semibold">Sign Up</a>
-                </p>
-                </div>
-
-                <div class="d-flex align-items-center my-3">
-                <hr class="flex-grow-1">
-                <span class="px-2 small text-muted">OR</span>
-                <hr class="flex-grow-1">
-                </div>
-
-                <div class="d-flex justify-content-center gap-3 mt-3">
-                <button class="btn social-btn d-flex align-items-center px-3" type="button">
-                    <div class="icon-circle me-2">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" width="20" height="20">
-                    </div>
-                    Google
-                </button>
-                <button class="btn social-btn d-flex align-items-center px-3" type="button">
-                    <div class="icon-circle me-2">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" width="20" height="20">
-                    </div>
-                    Facebook
-                </button>
-                </div>
-            </div>
-            </div>
-        </div>
-        </div>
-
-        <!--  Main Navbar -->
-        <nav class="daraz-navbar d-flex">
-        <a href="#">
-            <img src="/daraz-logo.png" alt="Daraz" class="daraz-logo">
-        </a>
-        <form class="d-flex search-box">
-            <input class="form-control" type="search" placeholder="Search in Daraz">
-            <button type="submit"><i class="bi bi-search"></i></button>
-        </form>
-        <a href="#" class="cart-icon"><i class="bi bi-cart"></i></a>
-        </nav>
+    <div class="main">
+  <div class="main_Nav_Container">
+    <!--  Top Bar -->
+    <div class="daraz-topbar d-flex justify-content-end align-items-center ">
+      <a href="#">SAVE MORE ON APP</a>
+      <a href="#">SELL ON DARAZ</a>
+      <a href="#">HELP & SUPPORT</a>
+      <!--  Login Modal  -->
+      <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</a>
+      <a href="#">SIGN UP</a>
+      <a href="#">زبان تبدیل کریں</a>
     </div>
 
+    <!--  Main Navbar -->
+    <nav class="daraz-navbar d-flex">
+      <a href="#">
+        <img src="/imeges/daraz-logo.png" alt="Daraz" class="daraz-logo">
+      </a>
+      <form class="d-flex search-box">
+        <input class="search-bar form-control" type="search" placeholder="Search in Daraz">
+        <button type="submit"><i class="bi bi-search"></i></button>
+      </form>
+      <a href="#" class="cart-icon"><i class="bi bi-cart"></i></a>
+    </nav>
+  </div>
+
+
+<!-- login odal  -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-sm p-3">
+
+      <!-- Close button -->
+      <button type="button" class="out-btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>  
+
+      <!-- Header with Tabs -->
+      <div class="modal-header border-0 pb-0">
+        <ul class="nav nav-tabs w-100 border-0 justify-content-center" id="loginTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="password-tab" data-bs-toggle="tab" data-bs-target="#password-login" type="button" role="tab" aria-controls="password-login" aria-selected="true">
+              Password
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="phone-tab" data-bs-toggle="tab" data-bs-target="#phone-login" type="button" role="tab" aria-controls="phone-login" aria-selected="false">
+              Phone Number
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Body -->
+      <div class="modal-body">
+        <div class="tab-content" id="loginTabContent">
+
+          <!-- Password Login -->
+          <div class="tab-pane fade show active" id="password-login" role="tabpanel" aria-labelledby="password-tab">
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control input-custom" placeholder="Please enter your Phone or Email">
+              </div>
+              <div class="mb-2 position-relative">
+                <input type="password" id="passwordInput" class="form-control input-custom pe-5" placeholder="Please enter your password">
+                <span id="togglePassword" class="password-toggle"></span>
+              </div>
+              <div class="text-end mb-3">
+                <a href="#" class="small text-muted text-decoration-none">Forgot password?</a>
+              </div>
+              <div class="d-grid mb-3">
+                <button type="button" class="btn btn-login">LOGIN</button>
+              </div>
+            </form>
+          </div>
+
+          
+          <!-- Phone Number Login -->
+          <div class="tab-pane fade" id="phone-login" role="tabpanel" aria-labelledby="phone-tab">
+            <form>
+              <!-- Phone Input -->
+              <div class="mb-2 d-flex">
+                <!-- Country Code -->
+                <div class="input-group-prepend">
+                  <span class="input-group-text country-code">PK +92</span>
+                </div>
+                <!-- Phone Input -->
+                <input type="text" class="form-control input-custom" placeholder="Please enter your phone number">
+              </div>
+
+              <!-- Same spacing as 'Forgot password?' -->
+              <div class="text-end mb-3" style="visibility:hidden;">
+                <a href="#">placeholder</a>
+              </div>
+
+              <!-- Login Button -->
+              <div class="d-grid mb-3">
+                <button type="button" class="btn btn-login">
+                  <i class="bi bi-phone"></i> Send Code via SMS
+                </button>
+              </div>
+            </form>
+          </div>
+
+
+        </div>
+
+        <!-- Sign Up -->
+        <div class="text-center my-3">
+          <p class="small text-muted mb-1">Don’t have an account? 
+            <a href="#" class="text-decoration-none text-primary fw-semibold">Sign up</a>
+          </p>
+        </div>
+
+        <span class="LG-box-text d-flex justify-content-center">Or, login with</span>      
+
+        <!-- Social Login Buttons -->
+        <div class="social-buttons">
+          <button class="btn-google" type="button">
+            <img src="/imeges/download.png" alt="Google">
+            Google
+          </button>
+          <button class="btn-facebook" type="button">
+            <img src="/imeges/l1.png" alt="Facebook">
+            Facebook
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+ <!--  Main Navbar -->
+      <nav class="daraz-navbar d-flex">
+        <a href="#">
+          <img src="./imeges/daraz-logo.png" alt="Daraz" class="daraz-logo">
+        </a>
+        <form class="d-flex search-box">
+          <input class="search-bar form-control" type="search" placeholder="Search in Daraz">
+          <button type="submit"><i class="bi bi-search"></i></button>
+        </form>
+        <a href="#" class="cart-icon"><i class="bi bi-cart"></i></a>
+      </nav>
+ 
+      
+</div>
+
+
   <!--  Categories -->
-   <div class="categories-main-wrapper">
-  <div class="categories-wrapper">
+   <div class="categories-main-wrapper d-flex justify-content-start">
+   <div class="categories-wrapper">
     <button class="category-btn">
       Categories <i class="bi bi-chevron-down ms-1"></i>
     </button>
@@ -135,157 +203,154 @@
 
 
 <!--  Product Details Container -->
- <div class="product-details-main-container ">
+<div class="container-fluid product-details-main-container">
 
-   <div class="product-details-container d-flex">
-   
-     <!-- Left Section (70%) -->
-     <div class="product-left w-75 d-flex flex-column">
-   
-       <!-- 🔹 Row: Image + Info -->
-       <div class="d-flex gap-3">
-         <!-- Main Product Image -->
-          <div class="main-product-image">
-
-            <div class="main-image flex-shrink-0" >
-              <img id="displayImage" src="ppl.webp" alt="Product" class="img-fluid">
-            </div>
-             <!-- 🔹 Thumbnails -->
-       <div class="thumbnail-row d-flex justify-content-start main-image-thumbnails">
-         <img src="pt1.webp" alt="Thumb 1">
-       </div>
+  <div class="row product-details-container">
+    
+    <!-- Left Section (Main Image + Info) -->
+    <div class="col-lg-8 col-md-12 product-left">
+      <div class="row g-3">
+        
+        <!-- Main Product Image -->
+        <div class="col-md-5 text-start main-product-image">
+          <div class="main-image">
+            <img id="displayImage" src="/imeges/ppl.webp" alt="Product" class="img-fluid">
           </div>
-   
-         <!-- Product Info -->
-         <div class="product-info flex-grow-1 ">
-           <h4 class="product-detail mb-2">Pumpkin Seeds 240 Gram Without Shell Fresh Crunchy - Imported,</h4>
-           <div class="rating mb-2">⭐⭐⭐⭐☆ <span class="text-muted small">
-                <a class="rating-text" href="#">Rating 156 </a> | <a class="rating-text" href="#">7 Answered Questions </a> </span></div>
-           <hr>
-   
-           <div class="product-pricing mb-2">
-             <h3 class=" mb-0 product-price2">Rs. 1,200</h3>
-             <p class="mb-0 text-muted"><del>Rs. 1,800</del> <span class="text-success">-33%</span></p>
-           </div>
-           <hr>
-   
-           <!-- Quantity -->
-           <div class="quantity-details d-flex align-items-center mb-3">
-                <label class="me-3 fw-semibold">Quantity:</label>
-                <div class="quantity-box d-flex align-items-center">
-                  <button class="btn btn-light quantity-minus">−</button>
-                  <input type="number" value="1" min="1" class="quantity-input">
-                  <button class="btn btn-light quantity-plus">+</button>
-                </div>
-              </div>
+          <div class="thumbnail-row d-flex justify-content-start main-image-thumbnails mt-2">
+            <img src="/imeges/pt1.webp" alt="Thumb 1">
+          </div>
+        </div>
 
-   
-   
-   
-           <!-- Buttons -->
-           <div class="d-flex gap-3">
-             <button class="buy-button">Buy Now</button>
-             <button class="add-button">Add to Cart</button>
-           </div>
-         </div>
-       </div>
-   
-     </div>
-   
-     <!-- Right Section (30%) -->
-       <div class="product-right p-3">
-       
-       <!-- 🔹 Delivery Info -->
-       <h6 id="do-text" class="text-muted">Delivery option</h6>
-       <div class="d-flex align-items-start mb-3">
-         <i class="bi bi-geo-alt-fill me-2 text-secondary"></i>
-         <p class="mb-0 small Delivery-Info">
-           Sindh, Karachi - Gulshan-e-Iqbal, Block 15.
-         </p>
-         <button src="#" id="change-button">change</button>
-       </div>
-       <hr>
-   
-       <!-- 🔹 Fast Delivery -->
-     <div class="d-flex flex-column gap-2">
-   
-       <!-- First Row -->
-       <div class="d-flex align-items-start justify-content-between">
-         <div class="d-flex align-items-start">
-           <i class="bi bi-truck me-2 text-secondary"></i>
-           <div class="d-flex flex-column g-0">
-             <p id="stg-heading">Standard Delivery</p>
-             <p id="stg-text">Guaranteed by 30 Aug - 3 Sep</p>
-           </div>
-         </div>
-         <h6 class="fw-semibold stg-price">Rs. 125</h6>
-       </div>
-   
-       <!-- Second Row -->
-       <div class="d-flex align-items-start justify-content-between">
-         <div class="d-flex align-items-start">
-           <i class="bi bi-cash-stack me-2 text-secondary"></i>
-           <div class="d-flex flex-column g-0">
-             <p id="stg-heading">Cash on Delivery Available</p>
-           </div>
-         </div>
-       </div>
-   
-     </div>
-   
-   
-       <hr>
-       <!-- 🔹 Return Warranty -->
-       <h6 id="wa-text" class="fw-semibold mb-2">Return & Warranty</h6>
-       <p class="small mb-3">14 days easy return</p>
-       <p class="small mb-3">Warranty not available</p>
-       <hr>
-   
-       <!-- 🔹 Product Image + Details -->
-       <div class="d-flex align-items-center mb-2">
-         <img src="qr2.png" alt="product" class="me-3" width="115" height="115">
-         <div id="dbox">
-           <img src="logo-p.png" alt="icon" class="mb-2" width="45" height="45">
-           <p class="small mb-0">download app to enjoy<br>exclusive discount</p>
-         </div>
-       </div>
-       <p id="app-d">Scan With Mobile</p>
-   
-       <!-- 🔹 Seller Info Section -->
-     <div class="seller-box">
-       <div class="seller-header">
-         <div>
-           <p class="sold-by">Sold by</p>
-           <h6 class="seller-name">VALAM NATURALS</h6>
-         </div>
-         <a href="#" class="chat-btn">
-           <i class="bi bi-chat-dots"></i> Chat Now
-         </a>
-       </div>
-   
-       <div class="seller-stats">
-         <div class="stat">
-           <p class="stat-title">Positive Seller Ratings</p>
-           <h6 class="stat-value">93%</h6>
-         </div>
-         <div class="stat">
-           <p class="stat-title">Ship on Time</p>
-           <h6 class="stat-value">100%</h6>
-         </div>
-         <div class="stat">
-           <p class="stat-title">Chat Response Rate</p>
-           <h6 class="stat-muted">Not enough data</h6>
-         </div>
-       </div>
-   
-       <div class="goto-store">
-         <a href="#">GO TO STORE</a>
-       </div>
-     </div>
-     </div>
-   
-   </div>
- </div>
+        <!-- Product Info -->
+        <div class="col-md-7 product-info">
+          <h4 class="product-detail mb-2">
+            Pumpkin Seeds 240 Gram Without Shell Fresh Crunchy - Imported,
+          </h4>
+          <div class="rating mb-2 d-flex" >
+            <div class="rating-line d-flex "><p class="red-star">&#9733;</p><p class="red-star">&#9733;</p><p class="red-star">&#9733;</p><p class="red-star">&#9733;</p><p class="white-star">&#9733;</p></div> 
+            <span id="product-from-txt" class="text-muted pt-1">
+              <a class="rating-text" href="#">Rating 156 </a> | 
+              <a class="rating-text" href="#">7 Answered Questions </a>
+            </span>
+          </div>
+          <div id="product-from-txt" class="d-flex align-items-center">
+            <span class="text-muted me-1">Brand:</span>
+            <a href="#" class="text-primary text-decoration-none link-hover me-2">No Brand</a>
+            <span class="text-muted me-2">|</span>
+            <a href="#" class="text-primary text-decoration-none link-hover">
+              More Canned, Dry &amp; Packaged Foods from No Brand
+            </a>
+          </div>
+          <hr>
+
+          <div class="product-pricing">
+            <h3 class="mb-0 product-price2">Rs. 1,200</h3>
+            <p class="mb-0 text-muted">
+              <del>Rs. 1,800</del> <span class="text-success">-33%</span>
+            </p>
+          </div>
+          <hr>
+
+          <!-- Quantity -->
+          <div class="quantity-details d-flex align-items-center mb-3">
+            <label class="quantity-text me-3">Quantity</label>
+            <div class="quantity-box d-flex align-items-center">
+              <button class="btn btn-light quantity-minus">−</button>
+              <input type="number" value="1" min="1" class="quantity-input">
+              <button class="btn btn-light quantity-plus">+</button>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="d-flex gap-3">
+            <button class="buy-button">Buy Now</button>
+            <button class="add-button">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="col-lg-4 col-md-12 product-right p-3">
+      <h6 id="do-text" class="text-muted">Delivery option</h6>
+      <div class="d-flex align-items-start ms-4 mb-2">
+        <i class="bi bi-geo-alt-fill me-2 text-secondary"></i>
+        <p class="mb-0 small Delivery-Info">
+          Sindh, Karachi - Gulshan-e-Iqbal, Block 15.
+        </p>
+        <button src="#" id="change-button">change</button>
+      </div>
+      <hr class="bottom-line">
+
+      <div class="d-flex flex-column gap-2">
+        <div class="d-flex align-items-start justify-content-between">
+          <div class="d-flex align-items-start">
+            <i class="bi bi-truck me-2 ms-4 text-secondary"></i>
+            <div class="d-flex flex-column g-0">
+              <p id="stg-heading">Standard Delivery</p>
+              <p id="stg-text">Guaranteed by 30 Aug - 3 Sep</p>
+            </div>
+          </div>
+          <h6 class="RS-counting">Rs. 125</h6>
+        </div>
+        <div class="d-flex align-items-start justify-content-between">
+          <div class="d-flex align-items-start">
+            <i class="bi bi-cash-stack me-2 ms-4 text-secondary"></i>
+            <div class="d-flex flex-column g-0">
+              <p id="stg-heading">Cash on Delivery Available</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="bottom-line">
+      <h6 id="wa-text" class="fw-semibold mb-2 ms-4">Return & Warranty</h6>
+      <p class="small mb-3 ms-4">14 days easy return</p>
+      <p class="small mb-3 ms-4">Warranty not available</p>
+      <hr class="bottom-line">
+
+      <div class="d-flex align-items-center mb-2 ms-4">
+        <img src="/imeges/qr2.png" alt="product" class="me-3" width="115" height="115">
+        <div id="dbox">
+          <img src="/imeges/logo-p.png" alt="icon" class="mb-2" width="45" height="45">
+          <p class="small mb-0">download app to enjoy<br>exclusive discount</p>
+        </div>
+      </div>
+      <p id="app-d" class="ms-4">Scan With Mobile</p>
+
+      <div class="seller-box ">
+        <div class="seller-header">
+          <div>
+            <p class="sold-by ms-4">Sold by</p>
+            <h6 class="seller-name ms-4">VALAM NATURALS</h6>
+          </div>
+          <a href="#" class="chat-btn "><i class="bi bi-chat-dots"></i> Chat Now</a>
+        </div>
+
+        <div class="seller-stats">
+          <div class="stat">
+            <p class="stat-title ms-4 ">Positive Seller Ratings</p>
+            <h6 class="stat-value ms-4">93%</h6>
+          </div>
+          <div class="stat">
+            <p class="stat-title">Ship on Time</p>
+            <h6 class="stat-value">100%</h6>
+          </div>
+          <div class="stat">
+            <p class="stat-title">Chat Response Rate</p>
+            <h6 class="stat-muted">Not enough data</h6>
+          </div>
+        </div>
+
+        <div class="goto-store">
+          <a href="#">GO TO STORE</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 
 
 <!-- Product Details Section -->
@@ -361,253 +426,292 @@
 
 
 <!-- Product rating Section -->
-
 <div class="container-fluid review-container">
   <!-- Ratings Summary -->
-  <h6 class="product-container-Title">Ratings & Reviews of Pumpkin Seeds 488 Gram Without Shell – Raw, Natural, Healthy Snack</h6>
+  <h6 class="revew-heading">Ratings & Reviews of Pumpkin Seeds 488 Gram Without Shell – Raw, Natural, Healthy Snack</h6>
 
-  <div class="row align-items-center mb-3">
-    <!-- Left Side (Overall Rating) -->
-    <div class="col-md-3 text-center">
-      <h2 class="fw-bold mb-0">4.7<span class="fs-5">/5</span></h2>
-      <div class="mb-2">
-        ⭐⭐⭐⭐⭐
+  <div class="row align-items-center mb-1">
+    
+    <div class="left-review col-md-3 text-start">
+      <h2 class="counting-text">4.9<span class="fs-2">/5</span></h2>
+      <div class="mb-2 d-flex">
+        <p class="big-star">&#9733;</p><p class="big-star">&#9733;</p><p class="big-star">&#9733;</p><p class="big-star">&#9733;</p><p class="big-star">&#9733;</p>
       </div>
       <p class="small text-muted">421 Ratings</p>
     </div>
 
-    <!-- Right Side (Breakdown) -->
-    <div class="col-md-9">
+    <div id="ratings-bars" class="col-md-9">
       <!-- 5 star -->
-      <div class="d-flex align-items-center mb-1">
-        <span class="me-2">⭐⭐⭐⭐⭐</span>
-        <div class="progress flex-grow-1 me-2" style="height: 8px;">
-          <div class="progress-bar bg-warning" style="width: 85%;"></div>
+      <div class="d-flex align-items-center">
+        <span class="me-2 d-flex"><p class="rating-star">&#9733;</p><p class="rating-star">&#9733;</p><p class="rating-star">&#9733;</p><p class="rating-star">&#9733;</p><p class="rating-star">&#9733;</p></span>
+        <div class="progress flex-grow-1 me-2 rating-progress">
+        <div class="progress-bar bg-warning w-85"></div>
         </div>
         <span class="small text-muted">361</span>
       </div>
+
       <!-- 4 star -->
-      <div class="d-flex align-items-center mb-1">
-        <span class="me-2">⭐⭐⭐⭐</span>
-        <div class="progress flex-grow-1 me-2" style="height: 8px;">
-          <div class="progress-bar bg-warning" style="width: 10%;"></div>
+      <div class="d-flex align-items-center ">
+        <span class="me-2 d-flex"><p class="rating-star">&#9733;</p><p class="rating-star">&#9733;</p><p class="rating-star">&#9733;</p><p class="rating-star">&#9733;</p><p class="rating-none-star">&#9733;</p></span>
+        <div class="progress flex-grow-1 me-2 rating-progress">
+        <div class="progress-bar bg-warning w-60"></div>
         </div>
-        <span class="small text-muted">34</span>
+        <span class="small text-muted">.34</span>
       </div>
+
       <!-- 3 star -->
-      <div class="d-flex align-items-center mb-1">
-        <span class="me-2">⭐⭐⭐</span>
-        <div class="progress flex-grow-1 me-2" style="height: 8px;">
-          <div class="progress-bar bg-warning" style="width: 3%;"></div>
+      <div class="d-flex align-items-center">
+        <span class="me-2 d-flex"><p class="rating-star">&#9733;</p><p class="rating-star">&#9733;</p><p class="rating-star">&#9733;</p><p class="rating-none-star">&#9733;</p><p class="rating-none-star">&#9733;</p></span>
+        <div class="progress flex-grow-1 me-2 rating-progress">
+        <div class="progress-bar bg-warning w-45"></div>
         </div>
-        <span class="small text-muted">10</span>
+        <span class="small text-muted">.10</span>
       </div>
+
       <!-- 2 star -->
-      <div class="d-flex align-items-center mb-1">
-        <span class="me-2">⭐⭐</span>
-        <div class="progress flex-grow-1 me-2" style="height: 8px;">
-          <div class="progress-bar bg-warning" style="width: 1%;"></div>
+      <div class="d-flex align-items-center">
+        <span class="me-2 d-flex"><p class="rating-star">&#9733;</p><p class="rating-star">&#9733;</p><p class="rating-none-star">&#9733;</p><p class="rating-none-star">&#9733;</p><p class="rating-none-star">&#9733;</p></span>
+        <div class="progress flex-grow-1 me-2 rating-progress">
+        <div class="progress-bar bg-warning w-4"></div>
         </div>
-        <span class="small text-muted">4</span>
+        <span class="small text-muted">..4</span>
       </div>
+
       <!-- 1 star -->
       <div class="d-flex align-items-center">
-        <span class="me-2">⭐</span>
-        <div class="progress flex-grow-1 me-2" style="height: 8px;">
-          <div class="progress-bar bg-warning" style="width: 2%;"></div>
+        <span class="me-2 d-flex"><p class="rating-star">&#9733;</p><p class="rating-none-star">&#9733;</p><p class="rating-none-star">&#9733;</p><p class="rating-none-star">&#9733;</p><p class="rating-none-star">&#9733;</p></span>
+        <div class="progress flex-grow-1 me-2 rating-progress">
+        <div class="progress-bar bg-warning w-12"></div>
         </div>
-        <span class="small text-muted">12</span>
+        <span class="small text-muted">.12</span>
       </div>
     </div>
+
   </div>
 
-  <hr>
 
   <!-- Product Review List -->
-  <h6 id="pr-hed " class="product-container-Title">Product Reviews</h6>
+  <div class="d-flex justify-content-between align-items-center border-top border-bottom px-3 ">
+  
+  <!-- Left Title -->
+  <h6 id="pr-hed" class="mb-0">Product Reviews</h6>
+
+  <!-- Right Controls -->
+  <div class="d-flex align-items-center gap-4">
+    <!-- Sort -->
+    <div class="d-flex align-items-center text-muted ">
+      <i class="bi bi-arrow-down-up me-1"></i>
+      <span>Sort:</span>
+      <a href="#" class="ms-1 text-dark text-decoration-none">Relevance</a>
+    </div>
+
+    <!-- Filter -->
+    <div class="d-flex align-items-center text-muted">
+      <i class="bi bi-funnel me-1"></i>
+      <span>Filter:</span>
+      <a href="#" class="ms-1 text-dark text-decoration-none">All star</a>
+    </div>
+  </div>
+
+</div>
+
   <div class="review-box mb-4">
-    <div class="d-flex align-items-center mb-2">
-      <span class="me-2">⭐⭐⭐⭐⭐</span>
-      <p class="mb-0 fw-semibold">Bakhtawar K.</p>
-      <span class="badge bg-light text-success ms-2">✔ Verified Purchase</span>
-      <span class="text-muted small ms-auto">04 Dec 2024</span>
+    <div class="d-flex-col align-items-center mb-2">
+      <span class="me-2 d-flex"><p class="rating-star">&#9733;</p><p class="rating-star">&#9733;</p><p class="rating-star">&#9733;</p><p class="rating-star">&#9733;</p><p class="rating-star">&#9733;</p></span>
+      
+      <div class="d-flex justify-content-between">
+        <p class="customer-name">Dr.z.</p>
+        <span class="badge  text-success ms-2 p-0"><img src="/imeges/verfied-img.jpg1 (1).png" class="verified-img"> Verified Purchase</span>
+        <span class="text-muted small ms-auto">04 Dec 2024</span>
+      </div>
     </div>
     <p class="mb-2">
       Ordering it for the third time because of the quality of seeds but the package that arrived today was broken.
-      Half pack was almost in the daraz wrap. I taped it to keep what was left.
+    
     </p>
     <div class="d-flex gap-2">
-      <img src="pt1.webp" alt="review-img" width="100" height="100" >
-      <img src="pt1.webp" alt="review-img" width="100" height="100" >
+      <img src="/imeges/pt1.webp" alt="review-img" width="100" height="100" >
+      <img src="/imeges/pt1.webp" alt="review-img" width="100" height="100" >
     </div>
   </div>
 
   <div class="review-box mb-4">
-    <div class="d-flex align-items-center mb-2">
-      <span class="me-2">⭐⭐⭐⭐⭐</span>
-      <p class="mb-0 fw-semibold">Bakhtawar K.</p>
-      <span class="badge bg-light text-success ms-2">✔ Verified Purchase</span>
-      <span class="text-muted small ms-auto">04 Dec 2024</span>
+    <div class="d-flex-col align-items-center mb-2">
+      <span class="me-2 d-flex"><p class="rating-star">&#9733;</p><p class="rating-star">&#9733;</p><p class="rating-star">&#9733;</p><p class="rating-star">&#9733;</p><p class="rating-star">&#9733;</p></span>
+      
+      <div class="d-flex justify-content-between">
+        <p class="customer-name">Dr.z.</p>
+        <span class="badge  text-success ms-2 p-0"><img src="/imeges/verfied-img.jpg1 (1).png" class="verified-img"> Verified Purchase</span>
+        <span class="text-muted small ms-auto">04 Dec 2024</span>
+      </div>
     </div>
     <p class="mb-2">
       Ordering it for the third time because of the quality of seeds but the package that arrived today was broken.
       Half pack was almost in the daraz wrap. I taped it to keep what was left.
     </p>
     <div class="d-flex gap-2">
-      <img src="pt1.webp" alt="review-img" width="100" height="100" >
-      <img src="pt1.webp" alt="review-img" width="100" height="100" >
+      <img src="/imeges/pt1.webp" alt="review-img" width="100" height="100" >
+      <img src="/imeges/pt1.webp" alt="review-img" width="100" height="100" >
     </div>
   </div>
 
 
   <div class="review-box mb-4">
-    <div class="d-flex align-items-center mb-2">
-      <span class="me-2">⭐⭐⭐⭐⭐</span>
-      <p class="mb-0 fw-semibold">Bakhtawar K.</p>
-      <span class="badge bg-light text-success ms-2">✔ Verified Purchase</span>
-      <span class="text-muted small ms-auto">04 Dec 2024</span>
+    <div class="d-flex-col align-items-center mb-2">
+      <span class="me-2 d-flex"><p class="rating-star">&#9733;</p><p class="rating-star">&#9733;</p><p class="rating-star">&#9733;</p><p class="rating-star">&#9733;</p><p class="rating-star">&#9733;</p></span>
+      
+      <div class="d-flex justify-content-between">
+        <p class="customer-name">Dr.z.</p>
+        <span class="badge  text-success ms-2 p-0"><img src="/imeges/verfied-img.jpg1 (1).png" class="verified-img"> Verified Purchase</span>
+        <span class="text-muted small ms-auto">04 Dec 2024</span>
+      </div>
     </div>
     <p class="mb-2">
       Ordering it for the third time because of the quality of seeds but the package that arrived today was broken.
       Half pack was almost in the daraz wrap. I taped it to keep what was left.
     </p>
     <div class="d-flex gap-2">
-      <img src="pt1.webp" alt="review-img" width="100" height="100" >
-      <img src="pt1.webp" alt="review-img" width="100" height="100" >
+      <img src="/imeges/pt1.webp" alt="review-img" width="100" height="100" >
+      <img src="/imeges/pt1.webp" alt="review-img" width="100" height="100" >
     </div>
   </div>
 
-  <div class="review-box mb-4">
-    <div class="d-flex align-items-center mb-2">
-      <span class="me-2">⭐⭐⭐⭐⭐</span>
-      <p class="mb-0 fw-semibold">Bakhtawar K.</p>
-      <span class="badge bg-light text-success ms-2">✔ Verified Purchase</span>
-      <span class="text-muted small ms-auto">04 Dec 2024</span>
+  <div class="review-box mb-2">
+    <div class="d-flex-col align-items-center mb-2">
+      <span class="me-2 d-flex"><p class="rating-star">&#9733;</p><p class="rating-star">&#9733;</p><p class="rating-star">&#9733;</p><p class="rating-star">&#9733;</p><p class="rating-star">&#9733;</p></span>
+      
+      <div class="d-flex justify-content-between">
+        <p class="customer-name">Dr.z.</p>
+        <span class="badge  text-success ms-2 p-0"><img src="/imeges/verfied-img.jpg1 (1).png" class="verified-img"> Verified Purchase</span>
+        <span class="text-muted small ms-auto">04 Dec 2024</span>
+      </div>
     </div>
     <p class="mb-2">
       Ordering it for the third time because of the quality of seeds but the package that arrived today was broken.
       Half pack was almost in the daraz wrap. I taped it to keep what was left.
     </p>
     <div class="d-flex gap-2">
-      <img src="pt1.webp" alt="review-img" width="100" height="100" >
-      <img src="pt1.webp" alt="review-img" width="100" height="100" >
+      <img src="/imeges/pt1.webp" alt="review-img" width="100" height="100" >
+      <img src="/imeges/pt1.webp" alt="review-img" width="100" height="100" >
     </div>
   </div>
 </div>
 
 <!-- question-section  -->
 
-<div class="qa-section-wrapper my-4">
-    <div class="qa-section">
-      <div class="div-heading">
-        <h5 class="product-container-Title">Questions about this product (11)</h5>
-        <p>
-          <a href="#">Login</a> or <a href="#">Register</a> to ask questions
-        </p>
-        <p class="mb-3"><strong>Other questions answered by VALAM NATURALS (11)</strong></p>
-      </div>
-      <!-- Question 1 -->
-      <div class="d-flex question align-items-start">
-        <span class="badge bg-info me-2">Q</span>
-        <div>
-          <p>Unable to buy</p>
-          <small>Zulfiqar A. - 12 Jun 2024</small>
-        </div>
-      </div>
+<div class="qa-section-wrapper my-2 p-0 border">
+  <!-- Header -->
+  <div class="qa-header">
+    <div class=""><h6 class="revew-heading">Questions about this product (7)</h6></div>
+      <!-- Login/Register -->
+    <p class="qa-login">
+      <a href="#">Login</a> or
+      <a href="#">Register</a>
+      to ask questions
+    </p>
+    <p class="qa-subheading">
+      Other questions answered by VALAM NATURALS (7)
+    </p>
+  </div>
 
-      <div class="d-flex answer align-items-start mt-2 mb-3">
-        <span class="badge bg-secondary me-2">A</span>
-        <div>
-          <p>Kindly Contact customer support</p>
-          <small>VALAM NATURALS - Answered within 11 hours</small>
-        </div>
-      </div>
-      <hr>
-
-      <!-- Question 2 -->
-      <div class="d-flex question align-items-start">
-        <span class="badge bg-info me-2">Q</span>
-        <div>
-          <p>Facing error at final stage/payment stage</p>
-          <small>Zulfiqar A. - 12 Jun 2024</small>
-        </div>
-      </div>
-
-      <div class="d-flex answer align-items-start mt-2 mb-3">
-        <span class="badge bg-secondary me-2">A</span>
-        <div>
-          <p>Kindly Contact customer support</p>
-          <small>VALAM NATURALS - Answered within 11 hours</small>
-        </div>
-      </div>
-      <hr>
-
-      <!-- Question 3 -->
-      <div class="d-flex question align-items-start">
-        <span class="badge bg-info me-2">Q</span>
-        <div>
-          <p>Send fresh seeds. I have ordered</p>
-          <small>Khuram B. - 16 May 2024</small>
-        </div>
-      </div>
-
-      <div class="d-flex answer align-items-start mt-2 mb-3">
-        <span class="badge bg-secondary me-2">A</span>
-        <div>
-          <p>ok</p>
-        </div>
+  <div class="qa-section p-3">
+  
+    <!-- Q1 -->
+    <div class="d-flex question align-items-start mb-2">
+      <span class="badge qa-badge-q ms-2 me-4 ">Q</span>
+      <div>
+        <p class="mb-1">yeh roasted han?</p>
+        <small class="text-muted">Amna S. - 02 Nov 2023</small>
       </div>
     </div>
+    <div class="d-flex answer align-items-start mb-3">
+      <span class="badge qa-badge-a ms-2 me-4">A</span>
+      <div>
+        <p class="mb-1">no</p>
+        <small class="text-muted">VALAM NATURALS - Answered within 13 hours</small>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Q2 -->
+    <div class="d-flex question align-items-start mb-2">
+      <span class="badge qa-badge-q ms-2 me-4">Q</span>
+      <div>
+        <p class="mb-1">ye available kab hoga</p>
+        <small class="text-muted">hanif - 12 Oct 2023</small>
+      </div>
+    </div>
+    <div class="d-flex answer align-items-start mb-3">
+      <span class="badge qa-badge-a ms-2 me-4">A</span>
+      <div>
+        <p class="mb-1">abhi bhi available hai apko koi issue araha hai order place kernay main to chat main msg karain</p>
+        <small class="text-muted">VALAM NATURALS - Answered within 2 hours</small>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Q3 -->
+    <div class="d-flex question align-items-start mb-2">
+      <span class="badge qa-badge-q ms-2 me-4">Q</span>
+      <div>
+        <p class="mb-1">main nay pehlay aik order kia ...</p>
+        <small class="text-muted">3***7 - 25 Sep 2023</small>
+      </div>
+    </div>
+    <div class="d-flex answer align-items-start mb-3">
+      <span class="badge qa-badge-a ms-2 me-4">A</span>
+      <div>
+        <p class="mb-1">apko chat per pouchna chaiye tha ab ap customer support ko call kerkay cancel kerwaiye dosra order ku kay wo hi dispach ho chuka hai </p>
+        <small class="text-muted">VALAM NATURALS - Answered within 1 hours</small>
+      </div>
+    </div>
+  </div>
 </div>
 
+
+
 <!-- You May Also Like Section -->
-<section class="you-may-like-wrapper">
+<section class="you-may-like-wrapper mb-4">
   <div class="container">
-    <h5 class="section-title product-container-Title">You may also like</h5>
-    <div class="row">
+    <h5 class="section-title product-container-Title mt-3">You may also like</h5>
 
+    <!-- Cards Wrapper -->
+    <div class="d-flex flex-wrap gap-1">
+      
       <!-- Product Card -->
-      <div class="col-6 col-md-4 col-lg-2">
-        <div class="product-card">
-          <img src="lproduct.jpg1.webp" alt="Pumpkin Seeds">
-          <div class="product-details">
-            <p class="product-title">Pumpkin Seeds for eating without shell – Fresh Green...</p>
-            <p class="price">Rs. 549</p>
-            <p class="rating">★★★★★</p>
-          </div>
+      <div class="product-card">
+        <img src="/imeges/lproduct.jpg1.webp" alt="Pumpkin Seeds">
+        <div class="product-details">
+          <p class="product-title">Pumpkin Seeds for eating without shell – Fresh Green...</p>
+          <p class="price">Rs. 549</p>
+          <p class="rating">★★★★★</p>
         </div>
       </div>
 
-      <div class="col-6 col-md-4 col-lg-2">
-        <div class="product-card">
-          <img src="lproduct.jpg2.webp" alt="Pumpkin Seeds">
-          <div class="product-details">
-            <p class="product-title">Pumpkin Seeds Without Shell 500g</p>
-            <p class="price">Rs. 849</p>
-            <p class="rating">★★★★★</p>
-          </div>
+      <div class="product-card">
+        <img src="/imeges/lproduct.jpg2.webp" alt="Pumpkin Seeds">
+        <div class="product-details">
+          <p class="product-title">Pumpkin Seeds Without Shell 500g</p>
+          <p class="price">Rs. 849</p>
+          <p class="rating">★★★★★</p>
         </div>
       </div>
 
-      <div class="col-6 col-md-4 col-lg-2">
-        <div class="product-card">
-          <img src="lproduct.jpg3.webp" alt="Pumpkin Seeds">
-          <div class="product-details">
-            <p class="product-title">Pack of 2 Seeds / Sunflower Seeds 100g Each</p>
-            <p class="price">Rs. 388</p>
-            <p class="rating">★★★★☆</p>
-          </div>
+      <div class="product-card">
+        <img src="/imeges/lproduct.jpg3.webp" alt="Pumpkin Seeds">
+        <div class="product-details">
+          <p class="product-title">Pack of 2 Seeds / Sunflower Seeds 100g Each</p>
+          <p class="price">Rs. 388</p>
+          <p class="rating">★★★★☆</p>
         </div>
       </div>
 
-      <div class="col-6 col-md-4 col-lg-2">
-        <div class="product-card">
-          <img src="lproduct.jpg1 (1).webp" alt="Pumpkin Seeds">
-          <div class="product-details">
-            <p class="product-title">Pumpkin Seeds Without Shell - Kudo Ke Beej Organic</p>
-            <p class="price">Rs. 350</p>
-            <p class="rating">★★★★★</p>
-          </div>
+      <div class="product-card">
+        <img src="/imeges/lproduct.jpg1 (1).webp" alt="Pumpkin Seeds">
+        <div class="product-details">
+          <p class="product-title">Pumpkin Seeds Without Shell - Kudo Ke Beej Organic</p>
+          <p class="price">Rs. 350</p>
+          <p class="rating">★★★★★</p>
         </div>
       </div>
 
@@ -615,18 +719,17 @@
   </div>
 </section>
 
+
 <!-- footer1 -->
 
-<footer >
+<footer class="footer-first">
   <div class="footer1">
     <div class="row">
       
-      <!-- LEFT SIDE (50% width) -->
-      <div class="col-md-6 ">
+      <div class="LS-lists col-md-5 ">
         <div class="row">
           
-          <!-- Customer Care (Left Column) -->
-          <div class="col-md-6 ">
+          <div class="fi-column-text col-md-6 ">
             <h5>Customer Care</h5>
             <ul>
               <li><a href="#">Help Center</a></li>
@@ -640,8 +743,7 @@
             </ul>
           </div>
 
-          <!-- Daraz Info (Right Column) -->
-          <div class="col-md-6">
+          <div class="column-txt col-md-6">
             <h5>Daraz</h5>
             <ul>
               <li><a href="#">About Us</a></li>
@@ -665,31 +767,35 @@
       </div>
 
      <!-- RIGHT SIDE (50% width) -->
-          <div class="col-md-6 d-flex align-items-start justify-content-start">
+          <div class="FT-r-side col-md-6 d-flex align-items-start justify-content-start">
 
             <!-- Logo + Text -->
-            <div class="d-flex align-items-center me-4">
-              <img src="daraz-wbg-logo.png" alt="Daraz Logo" width="40" class="me-2">
+            <div class="HD_Text d-flex align-items-center me-4">
+              <img src="/imeges/daraz-wbg-logo.png" alt="Daraz Logo"  class="Dr-logo-ft">
               <div>
-                <p class="mb-0" style="color:#f85606;">Happy Shopping</p>
-                <a href="#" style="color: #121351; text-decoration:none; font-size:14px;">Download App</a>
+                <p class="RS-hp-text mb-0 ">Happy Shopping</p>
+                <a class="RS-ds-text" href="#">Download App</a>
               </div>
             </div>
 
             <!-- App Badges -->
-            <div class="app-badges d-flex flex-wrap">
-              <!-- First Row (2 badges) -->
-              <a href="#" class="me-2">
-                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" height="40">
-              </a>
-              <a href="#">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" height="40">
-              </a>
+             <div class="app-badge-wraper">
+                <div class="app-badges d-flex flex-wrap">
+                 
+                  <a href="#">
+                    <img class="badge-img-f" src="/imeges/daraz.jpg50.png" alt="App Store" height="40">
+                  </a>
+                  <a href="#">
+                    <img class="badge-img-f" src="/imeges/daraz.jpg51.png" alt="Google Play" height="40">
+                  </a>
 
-              <!-- Second Row (1 badge centered) -->
-              <div id="down-ad-button" class="w-100 d-flex  mt-2">
-                <a href="#"><img src="appG.png" alt="App Gallery" height="40"></a>
-              </div>
+                  
+                  <div id="down-ad-button" class="w-100 d-flex  mt-2">
+                    <a href="#">
+                      <img class="badge-img" src="/imeges/appG.png" alt="App Gallery" height="40">
+                    </a>
+                  </div>
+                </div>
             </div>
 
           </div>
@@ -708,25 +814,25 @@
 
     <!-- Images Grid -->
     <div class="row g-1 mt-2">
-      <div class="col-2"><img src="pm1.png" class="img-fluid" alt="Payment 1"></div>
-      <div class="col-2"><img src="pm2.png" class="img-fluid" alt="Payment 2"></div>
-      <div class="col-2"><img src="pm3.png" class="img-fluid" alt="Payment 3"></div>
-      <div class="col-2"><img src="pm4.png" class="img-fluid" alt="Payment 4"></div>
-      <div class="col-2"><img src="pm5.png" class="img-fluid" alt="Payment 5"></div>
-      <div class="col-2"><img src="pm6.png" class="img-fluid" alt="Payment 6"></div>
+      <div class="col-2"><img src="/imeges/pm1.png" class="img-fluid" alt="Payment 1"></div>
+      <div class="col-2"><img src="/imeges/pm2.png" class="img-fluid" alt="Payment 2"></div>
+      <div class="col-2"><img src="/imeges/pm3.png" class="img-fluid" alt="Payment 3"></div>
+      <div class="col-2"><img src="/imeges/pm4.png" class="img-fluid" alt="Payment 4"></div>
+      <div class="col-2"><img src="/imeges/pm5.png" class="img-fluid" alt="Payment 5"></div>
+      <div class="col-2"><img src="/imeges/pm6.png" class="img-fluid" alt="Payment 6"></div>
     </div>
 
     <div class="row g-1">
-      <div class="col-2"><img src="pm7.png" class="img-fluid" alt="Payment 7"></div>
-      <div class="col-2"><img src="pm8.png" class="img-fluid" alt="Payment 8"></div>
-      <div class="col-2"><img src="pm9.png" class="img-fluid" alt="Payment 9"></div>
+      <div class="col-2"><img src="/imeges/pm7.png" class="img-fluid" alt="Payment 7"></div>
+      <div class="col-2"><img src="/imeges/pm8.png" class="img-fluid" alt="Payment 8"></div>
+      <div class="col-2"><img src="/imeges/pm9.png" class="img-fluid" alt="Payment 9"></div>
     </div>
   </div>
 
   <!-- RIGHT: Extra Section -->
   <div class="verified-section d-flex flex-column align-items-start">
     <h6>Verified by</h6>
-    <img src="vimg.png" alt="Partner Logo" class="img-fluid mt-2" style="max-width:120px;">
+    <img src="/imeges/vimg.png" alt="Partner Logo" class="img-fluid mt-2" style="max-width:120px;">
   </div>
 
 </footer>
@@ -743,25 +849,25 @@
         <h5>Daraz International</h5>
 
         <!-- 5 images with text row -->
-        <div class="d-flex align-items-center bt-img-row flex-wrap">
+        <div class=" flag-foot d-flex align-items-center bt-img-row flex-wrap">
           <div class="d-flex align-items-center me-2 mb-2">
-            <img src="f1.png" alt="img1" class="me-2">
+            <img src="/imeges/f1.png" alt="img1" class="me-2">
             <span class="bt-footer-text">Pakistan</span>
           </div>
           <div class="d-flex align-items-center me-2 mb-2">
-            <img src="f2.png" alt="img2" class="me-2">
+            <img src="/imeges/f2.png" alt="img2" class="me-2">
             <span class="bt-footer-text">Bangladesh</span>
           </div>
           <div class="d-flex align-items-center me-2 mb-2">
-            <img src="f3.png" alt="img3" class="me-2">
+            <img src="/imeges/f3.png" alt="img3" class="me-2">
             <span class="bt-footer-text">Sri Lanka</span>
           </div>
           <div class="d-flex align-items-center me-2 mb-2">
-            <img src="f4.png" alt="img4" class="me-2">
+            <img src="/imeges/f4.png" alt="img4" class="me-2">
             <span class="bt-footer-text">Myanmar</span>
           </div>
           <div class="d-flex align-items-center mb-2">
-            <img src="f5.png" alt="img5" class="me-2">
+            <img src="/imeges/f5.png" alt="img5" class="me-2">
             <span class="bt-footer-text">Nepal</span>
           </div>
         </div>
@@ -778,23 +884,23 @@
         <!-- Below normal right side content -->
       <div class="d-flex align-items-center bt-img-row flex-wrap">
           <div class="d-flex align-items-center me-2 mb-2">
-            <img src="l1.png" alt="img1" class="me-2">
+            <img src="/imeges/l1.png" alt="img1" class="me-2">
          </div>
 
          <div class="d-flex align-items-center me-2 mb-2">
-            <img src="l2.png" alt="img1" class="me-2">
+            <img src="/imeges/l2.png" alt="img1" class="me-2">
          </div>
 
          <div class="d-flex align-items-center me-2 mb-2">
-            <img src="l3.png" alt="img1" class="me-2">
+            <img src="/imeges/l3.png" alt="img1" class="me-2">
          </div>
 
          <div class="d-flex align-items-center me-2 mb-2">
-            <img src="l4.png" alt="img1" class="me-2">
+            <img src="/imeges/l4.png" alt="img1" class="me-2">
          </div>
 
          <div class="d-flex align-items-center me-2  mb-2">
-            <img src="l5.png" alt="img1" class="me-2">
+            <img src="/imeges/l5.png" alt="img1" class="me-2">
          </div>
 
 
